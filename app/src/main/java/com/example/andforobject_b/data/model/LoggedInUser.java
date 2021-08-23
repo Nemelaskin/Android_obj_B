@@ -5,16 +5,16 @@ package com.example.andforobject_b.data.model;
  */
 public class LoggedInUser {
 
-    private String userId;
+    private String UserId;
     private String displayName;
 
-    public LoggedInUser(String userId, String displayName) {
-        this.userId = userId;
+    public LoggedInUser(String UserId, String displayName) {
+        this.UserId = UserId;
         this.displayName = displayName;
     }
 
     public String getUserId() {
-        return userId;
+        return UserId;
     }
 
     public String getDisplayName() {

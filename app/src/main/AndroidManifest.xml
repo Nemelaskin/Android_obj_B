@@ -12,8 +12,17 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AndForObject_B">
-        <activity android:name=".MapViewActivity"></activity>
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".templateActivity"></activity>
+        <activity android:name=".SensorCrudActivity" />
+        <activity android:name=".PositionCrudActivity" />
+        <activity android:name=".RoleCrudActivity" />
+        <activity android:name=".RoomCrudActivity" />
+        <activity android:name=".MainAdminActivity" />
+        <activity android:name=".NewsCrudActivity" />
+        <activity
+            android:name=".MapViewActivity"
+            android:screenOrientation="landscape" />
         <activity android:name=".NewsActivity" />
         <activity android:name=".RatingTableActivity" />
         <activity android:name=".CabinetActivity" />

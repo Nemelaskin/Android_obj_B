@@ -3,10 +3,10 @@ package Models;
 import java.util.Date;
 
 public class Visits {
-    public int VisitId;
-    public Users User;
-    public int UserId;
-    public Date VisitTime;
-    public Rooms Room;
-    public int RoomId ;
+    public int visitId;
+    public Users user;
+    public int userId;
+    public Date visitTime;
+    public Rooms room;
+    public int roomId ;
 }

@@ -5,10 +5,10 @@ public class RatingTable {
     public String Name ;
     public String Email ;
 
-    public RatingTable(int position, String name,  String email) {
+    public RatingTable(int position, String name,  String Email) {
         Position = position;
         Name = name;
-        Email = email;
+        Email = Email;
     }
 
     public int getPosition() {

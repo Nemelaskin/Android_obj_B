@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Companies {
-    public int CompanyId ;
-    public String MapLink;
-    public String NameCompany;
-    public ArrayList<Rooms> Room = new ArrayList<Rooms>() ;
-    public String Owner ;
+    public int companyId ;
+    public String mapLink;
+    public String nameCompany;
+    public ArrayList<Rooms> room = new ArrayList<Rooms>();
+    public String owner ;
 }

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AndForObject_B</string>
+    <string name="prompt_Email">Пошта</string>
+    <string name="prompt_password">Пароль</string>
+    <string name="action_sign_in">Увiйти</string>
+    <string name="action_sign_in_short">Увiйти</string>
+    <string name="welcome">Вiтаємо</string>
+    <string name="invalid_username">Не дiйсний логiн</string>
+    <string name="invalid_password">Пароль занадто короткий</string>
+    <string name="login_failed">Не вдалось увiйти</string>
+    <string name="action_settings">Налаштування</string>
+    <string name="name_viev" >Ім\'я:</string>
+    <string name="surname_viev" >Прізвище:</string>
+    <string name="Email_viev" >Пошта:</string>
+    <string name="Phone_viev" >Телефон:</string>
+    <string name="position_viev" >Посада:</string>
+
+</resources>

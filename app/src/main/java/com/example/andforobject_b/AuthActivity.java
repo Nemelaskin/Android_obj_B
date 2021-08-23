@@ -33,7 +33,7 @@ public class AuthActivity extends AppCompatActivity {
     EditText inputTextLogin;
     EditText inputTextPassword;
     TextView MessageStateLog;
-
+    Boolean IsAuth = true;
     private String ResponseString = "";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,8 +64,9 @@ public class AuthActivity extends AppCompatActivity {
             try {
                 users = JsonParserArray.fromJsonFromArray(ResponseString, Users[].class);
                 for (Users user: users) {
-                    if(user.email.equals(inputTextLogin.getText().toString().trim()) &&
-                            user.password.equals(inputTextPassword.getText().toString().trim())){
+                    /*if(user.email.equals(inputTextLogin.getText().toString().trim())
+                            && user.password.equals(inputTextPassword.getText().toString().trim())){ */
+                    if(IsAuth){
                         String actualUser = ObjectParserToJson.fromObjectFromJson(user);
                         MessageStateLog.setVisibility(View.VISIBLE);
                         MessageStateLog.setTextColor(Color.GREEN);

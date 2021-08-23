@@ -1,8 +1,5 @@
 package Utils.Request;
 
-
-import android.util.Log;
-
 import org.jetbrains.annotations.NotNull;
 
 import java.io.IOException;
@@ -13,12 +10,13 @@ import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
 
-public class GetRequest {
-    public static void RequestToGet(String url, Expression exc){
+public class DeleteRequest {
+    public static void RequestToDelete(String url, GetRequest.Expression exc){
 
         OkHttpClient client = new OkHttpClient();
 
         Request request = new Request.Builder()
+                .delete()
                 .url(url)
                 .build();
         client.newCall(request).enqueue(new Callback() {

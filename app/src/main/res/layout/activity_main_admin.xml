@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainAdminActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Admin Panel"
+            android:textAlignment="center"
+            android:textColor="#BDBDBD"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btn_to_role_crud"
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:onClick="onRolesClick"
+            android:text="Role" />
+
+        <Button
+            android:id="@+id/btn_to_user_crud"
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:onClick="onUsersClick"
+            android:text="User" />
+
+        <Button
+            android:id="@+id/btn_to_position_crud"
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:onClick="onPositionsClick"
+            android:text="Position" />
+
+        <Button
+            android:id="@+id/btn_to_news_crud"
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:onClick="onNewsClick"
+            android:text="News" />
+
+        <Button
+            android:id="@+id/btn_to_room_crud"
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:onClick="onRoomsClick"
+            android:text="Room" />
+
+        <Button
+            android:id="@+id/btn_to_sensor_crud"
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:onClick="onSensorsClick"
+            android:text="Sensor" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,7 +3,7 @@ package Models;
 public class Users {
     public int userId ;
     public String firstName;
-    public String secondName ;
+    public String secondName;
     public String email ;
     public String phone ;
     public String password ;
@@ -11,4 +11,5 @@ public class Users {
     public Positions position ;
     public int roleId ;
     public Roles role ;
+
 }

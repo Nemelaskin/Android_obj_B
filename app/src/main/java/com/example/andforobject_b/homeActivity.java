@@ -20,6 +20,7 @@ public class homeActivity extends AppCompatActivity {
     Button btn_to_News;
     Button btn_to_Map;
     TextView textWelcome;
+    Button btn_to_Admin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,12 +35,17 @@ public class homeActivity extends AppCompatActivity {
     }
 
     public void addListenerOnButton() {
-
+        btn_to_Admin = (Button) findViewById(R.id.btn_to_admin);
         btn_to_cabinet = (Button) findViewById(R.id.buttonToKabinet);
         btn_to_News = (Button) findViewById(R.id.btnNews);
         btn_to_Map = (Button) findViewById(R.id.btn_to_Map);
         btn_to_Map.setOnClickListener(v -> {
             Intent intent = new Intent(homeActivity.this, MapViewActivity.class);
+            intent.putExtra("ActualUser", actualUserString);
+            startActivity(intent);
+        });
+        btn_to_Admin.setOnClickListener(v -> {
+            Intent intent = new Intent(homeActivity.this, MainAdminActivity.class);
             intent.putExtra("ActualUser", actualUserString);
             startActivity(intent);
         });
